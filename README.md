@@ -1,24 +1,25 @@
-# @enveloppe/api-test
+# @enveloppe/debug
 
-To install dependencies:
+This project is a simple debug/testing utility for the Enveloppe project.
 
-```bash
-bun install
-```
+It will send dummy generated markdown file to a configured GitHub repository, seeing if the GitHub works properly outside of Obsidian.
 
-To run:
+## Installation
 
 ```bash
-bun run index.ts
+bun i
 ```
 
-Don't forget to create an `.env` file with the following content:
+To initialize environment variables, run:
 
-```env
-GITHUB_TOKEN=
-OWNER=
-REPO=
-BASE_BRANCH=
+```bash
+bun run init
+```
+
+## Usage
+
+```bash
+bun run
 ```
 
 This project was created using `bun init` in bun v1.1.39. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
